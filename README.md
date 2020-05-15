@@ -1,2 +1,2 @@
 # LawMash
-Website where you can vote on which law firms are better.
+A hub for Michigan lawfirms.
