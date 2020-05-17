@@ -23,6 +23,11 @@ body{
   color: black;
 	width: 90%;
 }
+.firms a:not(:hover) {
+	animation:firmsunhover 0.50s;
+	background-color:#e9e9e9;
+	width: 70%;
+}
 .firms h1, h2, h3, h4, h5, h6 {
 	font-family: raleway;
 }
@@ -59,9 +64,12 @@ a {
 	color: rgb(184, 184, 184);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	body h1 {
 		font-size:1.2em;
+	}
+	.back a {
+		padding: 30px 32px;
 	}
 }
 @keyframes firmshover {
@@ -80,5 +88,15 @@ a {
 	}
 	100% {
 		background-color: lightblue;
+	}
+}
+@keyframes firmsunhover {
+	0% {
+		background-color: lightblue;
+		width: 90%;
+	}
+	100% {
+		background-color:#e9e9e9;
+		width: 70%;
 	}
 }
